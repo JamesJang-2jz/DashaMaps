@@ -1,11 +1,21 @@
 package com.github.zipcodewilmington.sample;
 
 public class Node{
-    String data;
+    String key;
+    String value;
     Node next;
-    public Node(String d){
-        data = d;
+    public Node(String key, String value){
+        this.key = key;
+        this.value = value;
         next = null;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public Node getNext() {
@@ -15,11 +25,11 @@ public class Node{
         this.next = next;
     }
 
-    public String getData() {
-        return data;
+    public String getValue() {
+        return value;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setValue(String value) {
+        this.value = value;
     }
 }

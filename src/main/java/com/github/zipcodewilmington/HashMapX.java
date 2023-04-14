@@ -14,5 +14,5 @@ public interface HashMapX {
     long size();
 
     // testing access
-    boolean bucketSize(String key); // used for tests
+    long bucketSize(String key); // used for tests
 }
